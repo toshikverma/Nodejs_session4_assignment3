@@ -15,8 +15,8 @@
     }
         var animal=new Animal("rabbit");
         var rabbit=new Rabbit("Yellow",10,"chotu");
-        rabbit.__proto__.type=animal.type;
-        alert("Animal: "+rabbit.type+"\nColor: "+rabbit.color+"\nAge : "+rabbit.age+"\nName: "+rabbit.name);
+        rabbit.__proto__.type=animal.type; //copying animal type though __proto__ in rabbit
+        alert("Animal: "+rabbit.type+"\nColor: "+rabbit.color+"\nAge : "+rabbit.age+"\nName: "+rabbit.name); //using type copied from animal here
     
     </script>
     </head></html>

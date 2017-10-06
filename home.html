@@ -1,0 +1,22 @@
+<html>
+<head>
+    <script>
+        function Animal(type){
+            this.type=type;
+            
+            
+        }
+    function Rabbit(color,age,name){
+        this.color=color;
+        this.age=age;
+        this.name=name;
+        
+        
+    }
+        var animal=new Animal("rabbit");
+        var rabbit=new Rabbit("Yellow",10,"chotu");
+        rabbit.__proto__.type=animal.type;
+        alert("Animal: "+rabbit.type+"\nColor: "+rabbit.color+"\nAge : "+rabbit.age+"\nName: "+rabbit.name);
+    
+    </script>
+    </head></html>
